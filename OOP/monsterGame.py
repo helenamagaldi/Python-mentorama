@@ -40,9 +40,9 @@ class TipoMonstro():
 
         s += 'Alimentos   :%d\n' % self.alimentos
 
-        s += 'Data Captura:%s\n' %\
+        s += 'Data Captura:%s\n' % self.dc
 
-            self.data_cap.strftime('%d/%m/%Y')
+        self.data_cap.strftime('%d/%m/%Y')
 
         return s
 
@@ -54,9 +54,9 @@ class TipoMonstro():
 
 
 
-    def desmaiar(sef):
+    def desmaiar(self):
 
-        # fazer
+        self.ativo = False
 
         pass
 
@@ -70,7 +70,7 @@ class TipoMonstro():
 
     def alimentar(self):
 
-        # fazer
+        self.alimentos = True
 
         pass
 

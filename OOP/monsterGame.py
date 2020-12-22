@@ -12,8 +12,6 @@ class TipoMonstro():
 
         self.ps = ps
 
-
-
         self.evolucao = 1
 
         self.ativo = True
@@ -25,6 +23,7 @@ class TipoMonstro():
 
 
     def __str__(self):
+
 
         s = ''
 
@@ -68,33 +67,24 @@ class TipoMonstro():
 
     def alimentar(self):
 
-        self.alimentos = True
+        self.alimentos = 1
 
 
 
 class TipoFogo(TipoMonstro):
 
     def __init__(self, nome, tipo, ps, temperatura, confortavel):
-
-        self.nome = nome
-        
-        self.tipo = tipo
-
-        self.ps = ps
+        super().__init__(nome, tipo, ps)
 
         self.temperatura = temperatura
 
         self.confortavel = confortavel
 
-    def __str__(self):
+    def __str__(self): 
 
         s = ''
 
-        s += 'Nome        :%s\n' % self.nome
-
-        s += 'Tipo        :%s\n' % self.tipo
-
-        s += 'Ponto Saude :%d\n' % self.ps
+        s += super().__str__()
 
         s += 'Temperatura    :%d\n' % self.temperatura
 
@@ -115,22 +105,19 @@ class TipoFogo(TipoMonstro):
     def esta_confortavel(self):
 
         self.ativo = True
-        print)("Estou feliz!")
+        print("Estou feliz!")
 
     def triste(self):
 
         self.ativo = False
         print("Tô tisti ):")
 
-class tipoAgua(TipoMonstro):
+monstrinhoFoguento = TipoFogo("Foguinho", "Fogo", 5, 102, True)
+
+class TipoAgua(TipoMonstro):
 
     def __init__(self, nome, tipo, ps, fluxo, chateado, molhado):
-
-        self.nome = nome
-        
-        self.tipo = tipo
-
-        self.ps = ps
+        super().__init__(nome,tipo,ps)
 
         self.fluxo = fluxo
 
@@ -142,11 +129,7 @@ class tipoAgua(TipoMonstro):
 
         s = ''
 
-        s += 'Nome        :%s\n' % self.nome
-
-        s += 'Tipo        :%s\n' % self.tipo
-
-        s += 'Ponto Saude :%d\n' % self.ps
+        s += super().__str__()
 
         s += 'fluxo    :%d\n' % self.fluxo
 
@@ -158,10 +141,21 @@ class tipoAgua(TipoMonstro):
 
         return s
 
+    def aumentar_fluxo(self):
+
+        self.fluxo += 1
+        print("Chuva forte!")
+
 
     def chuva(self):
 
-       self.ativo = True
+       print(self.nome)
+       print("Chuva!")
+
+    def tipo_chuva(self):
+
+        print(self.nome)
+        print("CHUVA!")
 
     def sem_chuva(self):
 
@@ -180,10 +174,14 @@ class tipoAgua(TipoMonstro):
 
     def cheio_de_agua(self):
 
-        self.ativo = Ativo
+        self.ativo = True
         print("Estou bem feliz!")
 
     def seco(self):
 
         self.ativo = False
         print("Tá difícil de ficar sem água, por favor me molhe")
+
+monstrinhoMolhado = TipoAgua("Molhado", "Água", 7, 4, False, True)
+    
+# # não sei pq aqui está aparecendo o monstrinhoMolhado com underline, no VSCode está rodando sem problemas

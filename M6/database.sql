@@ -52,29 +52,38 @@ INSERT INTO Departamentos  (Codigo, Nome, Localizacao, CodigoFuncionarioGerente)
 
 -- A
 SELECT PrimeiroNome, UltimoNome FROM Funcionarios
-ORDER BY UltimoNome
+	ORDER BY UltimoNome
 
 -- B
 SELECT * FROM Funcionarios
-ORDER BY Cidade
+	ORDER BY Cidade
 
 -- C
 SELECT * FROM Funcionarios
-WHERE Salario > 1000
-ORDER BY PrimeiroNome, SegundoNome, UltimoNome
+	WHERE Salario > 1000
+	ORDER BY PrimeiroNome, SegundoNome, UltimoNome
 
 -- D
 SELECT DataNasci, PrimeiroNome FROM Funcionarios
-ORDER BY DataNasci DESC,
-PrimeiroNome
+	ORDER BY DataNasci DESC,
+	PrimeiroNome
 
 -- E
+SELECT SUM(Salario) FROM Funcionarios
 
 -- F
-
+SELECT Funcionarios.PrimeiroNome, Departamentos.Nome, Funcionarios.Funcao 
+	FROM Funcionarios JOIN Departamentos ON Funcionarios.CodigoDepartamento = Departamentos.Codigo
+	ORDER BY Funcionarios.PrimeiroNome
+	
 -- G
+SELECT COUNT(*)
+	FROM Funcionarios
 
 -- H
+SELECT Funcionarios.PrimeiroNome, Departamentos.Nome 
+	FROM Departamentos JOIN Funcionarios ON Departamentos.Codigo = Funcionarios.CodigoDepartamento
+	ORDER BY Departamentos.Nome, Funcionarios.PrimeiroNome
 
 
 

@@ -3,7 +3,7 @@ CREATE TABLE Funcionarios (
 		PrimeiroNome TEXT NOT NULL,
 		SegundoNome TEXT NOT NULL,
 		UltimoNome TEXT NOT NULL,
-		DataNasci TEXT NOT NULL,
+		DataNasci DATE,
 		CPF INTEGER NOT NULL,
 		RG INTEGER,
 		Endereco TEXT NOT NULL,
@@ -42,11 +42,11 @@ INSERT INTO Funcionarios (Codigo, PrimeiroNome, SegundoNome, UltimoNome, DataNas
 
 INSERT INTO Departamentos  (Codigo, Nome, Localizacao, CodigoFuncionarioGerente)
     VALUES
-    (003, 'Outros', 'Paris', 0),
-    (100, 'Engenharia', 'Edmonton', 1),
-    (120, 'Pesquisa', 'São Paulo', 2),
-    (188, 'Humanas', 'Brasília', 3),
-    (190, 'Tecnologia', 'Ottawa', 5),
+    (001, 'Outros', 'Paris', 0),
+    (090, 'Engenharia', 'Edmonton', 1),
+    (003, 'Pesquisa', 'São Paulo', 2),
+    (042, 'Humanas', 'Brasília', 3),
+    (034, 'Tecnologia', 'Ottawa', 5),
     (096, 'Sociologia', 'Brasília', 8),
     (070, 'Human Resources', 'Edmonton', 13);
 
@@ -57,7 +57,7 @@ SELECT PrimeiroNome, UltimoNome FROM Funcionarios
 -- B
 SELECT * FROM Funcionarios
 	ORDER BY Cidade
-
+ 
 -- C
 SELECT * FROM Funcionarios
 	WHERE Salario > 1000

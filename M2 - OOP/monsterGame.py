@@ -184,4 +184,3 @@ class TipoAgua(TipoMonstro):
 
 monstrinhoMolhado = TipoAgua("Molhado", "Água", 7, 4, False, True)
     
-# # não sei pq aqui está aparecendo o monstrinhoMolhado com underline, no VSCode está rodando sem problemas

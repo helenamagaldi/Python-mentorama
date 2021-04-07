@@ -25,15 +25,3 @@ print(threading.activeCount())
 
 
 
-
-# __name__ == "__main__":
-#    t1 = threading.Thread(target=proc1, arg=("more fish", "less fish"))
-#    t2 = threading.Thread(target=proc2, arg=("more chips", "less chips"))
-
-#    t1.start()
-#    t2.start()
-
-#    t1.join()
-#    t2.join()
-
-#    print(threading.activeCount())

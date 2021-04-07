@@ -5,7 +5,7 @@ import time
 threading.currentThread()
 
 # how many threads are actually actrive
-threading.active_count()
+threading.activeCount()
 
 # shows a list with all active threads
 threading.enumerate()

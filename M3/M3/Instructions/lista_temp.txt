@@ -1,0 +1,14 @@
+Codigo,Produto,Qtd,ValorUnitario
+A002,Agua Mineral,3,1.34
+A005,Agua com Gas,4,2
+F010,Abacaxi,5,1.99
+F992,Uva Crimson,1,6.99
+P038,Bolo de Cenoura,2,19.5
+P230,Pao de Forma,3,5.81
+L135,Detergente,3,1.76
+M092,Macarrao Spaghetti,2,4.36
+U371,Saco para Lixo,2,6.71
+E014,Sabonete Antibacteriano,3,2.69
+E090,Pasta de Dente Infantil,2,7.1
+C686,Costela Bovina,1,32.2
+S044,Panettone de Chocolate,2,22.52

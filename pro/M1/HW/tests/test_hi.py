@@ -1,9 +1,11 @@
+from hi import fizz
 import pytest
-from hi import
 
 class TestCal:
     def setup(self):
-         pass
+        pass
 
-    def test_self():
-         pass
+    def test_fizz(self):
+        fizz(5) 
+
+        return "fizz"

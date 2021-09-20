@@ -1,3 +1,0 @@
-# time.timedelta()
-
-print("hi")

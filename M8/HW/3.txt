@@ -1,5 +1,0 @@
-a) Essa questão, que também é chamada "de problemas bounded-buffer" é tem como a sua origem um problema de sincronização de multi-processos. Existem duas classes de threads (produtor e consumidor) para um buffer (produtor) finito, o que gera uma falta de espaço Dessa maneira, fazendo com que uma das classes de produtores espera por um pedaço no buffer. A outra fila (de consumidores) espera pelas informações contidas no buffer, considerando que este só pode ser acessado por uma thread ao mesmo tempo.
-
-Esses problemas podem resolvidos de diversas maneiras, incluindo o uso de semáforos e monitores (ou seja, por meio de comunicação inter-processos).
-
-b) Um problema clássico de programação é o de resolver sustemas dense linear com resultados verificados. Uma maneira de resolver é usar um algoritmo que permita o uso de sistemas dual-core sem fazer arredondamentos de pontos flutuantes. O algoritmo deve distribuir as tarefas computacionais entre os processadores.

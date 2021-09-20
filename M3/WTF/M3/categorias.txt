@@ -1,9 +1,0 @@
-A Aguas
-F Frutas
-P Padaria
-L Limpeza
-M Mercearia
-U Utilidades
-E Perfumaria
-C Acougue
-S Sazonais

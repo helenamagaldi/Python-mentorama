@@ -1,0 +1,19 @@
+{
+    "emp_details": [
+        {
+            "emp_name": "hellz",
+            "email": "email@email.com",
+            "job_profile": "dunno"
+        },
+                {
+            "emp_name": "dhellz",
+            "email": "emaidl@email.com",
+            "job_profile": "ddunno"
+        },
+                {
+            "emp_name": "helclz",
+            "email": "email@ecmail.com",
+            "job_profile": "ducnno"
+        }
+    ]
+}

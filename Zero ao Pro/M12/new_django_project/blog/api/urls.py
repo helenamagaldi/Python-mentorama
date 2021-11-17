@@ -1,6 +1,6 @@
 from django.urls import path
 from rest_framework import urlpatterns
-from rest_framework.urlpatterns import form, format_suffix_patterns, format_suffix_pattformat_suffix_patterns
+from rest_framework.urlpatterns import format_suffix_patterns
 from api import views
 
 
